@@ -1,8 +1,18 @@
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
 metadata:
-  name: bitnami-charts
+  name: rabbitmq-charts
   namespace: flux-system
 spec:
   interval: 5m0s
-  url: https://charts.bitnami.com/bitnami
+  url: oci://registry-1.docker.io/bitnamicharts/rabbitmq
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
+metadata:
+  name: mongodb-charts
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  url: oci://registry-1.docker.io/bitnamicharts/mongodb

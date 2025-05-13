@@ -6,15 +6,10 @@ metadata:
 spec:
   interval: 5m
   releaseName: rabbitmq
-  chart:
-    spec:
-      chart: rabbitmq
-      version: 16.0.2
-      sourceRef:
-        kind: HelmRepository
-        name: bitnami-charts
-        namespace: flux-system
-      interval: 10m
+  chartRef:
+    name: rabbitmq-charts
+    namespace: flux-system
+    kind: OCIRepository
   values:
     image:
       registry: docker.io

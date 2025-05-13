@@ -6,15 +6,10 @@ metadata:
 spec:
   interval: 10m
   releaseName: mongodb
-  chart:
-    spec:
-      chart: mongodb
-      version: 16.5.6
-      sourceRef:
-        kind: HelmRepository
-        name: bitnami-charts
-        namespace: flux-system
-      interval: 10m
+  chartRef:
+    name: mongodb-charts
+    namespace: flux-system
+    kind: OCIRepository
   values:
     image:
       registry: docker.io

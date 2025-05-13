@@ -25,11 +25,11 @@ spec:
       enabled: true
     resources:
       requests:
-        memory: 256Mi
+        memory: 350Mi
         cpu: 100m
       limits:
         cpu: 2
-        memory: 256Mi
+        memory: 350Mi
     arbiter:
       enabled: true
       resources:

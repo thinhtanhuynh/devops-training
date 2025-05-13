@@ -33,7 +33,7 @@ spec:
     service:
       type: LoadBalancer
     extraConfiguration: "## increase to 7 days
-      consumer_timeout = 604800000  "
+      consumer_timeout = 604800000"
   valuesFrom:
     - kind: Secret
       name: rabbitmq-secrets-module-3

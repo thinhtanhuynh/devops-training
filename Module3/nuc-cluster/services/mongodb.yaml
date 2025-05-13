@@ -12,7 +12,7 @@ spec:
       version: 16.5.6
       sourceRef:
         kind: HelmRepository
-        name: bitnami-charts
+        name: mongodb-charts
         namespace: flux-system
       interval: 10m
   values:

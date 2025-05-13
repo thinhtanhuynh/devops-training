@@ -12,7 +12,7 @@ spec:
       version: 16.0.2
       sourceRef:
         kind: HelmRepository
-        name: bitnami-charts
+        name: rabbitmq-charts
         namespace: flux-system
       interval: 10m
   values:

@@ -31,7 +31,7 @@ spec:
     clustering:
       forceBoot: true
     service:
-      type: LoadBalancer
+      type: ClusterIP
     extraConfiguration: "## increase to 7 days
       consumer_timeout = 604800000"
   valuesFrom:
